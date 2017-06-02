@@ -7,8 +7,8 @@
 ePie(dat, namevar = NULL, datavar = NULL, size = NULL, type = c("pie",
   "rose"), roseType = c("radias", "area"), theme = "default",
   title = NULL, subtitle = NULL, title.x = "center", title.y = "top",
-  legend = TRUE, legend.x = "left", legend.y = "top",
-  legend.orient = "horizontal", toolbox = TRUE,
+  radius = c(20, 110), legend = TRUE, legend.x = "left",
+  legend.y = "top", legend.orient = "horizontal", toolbox = TRUE,
   toolbox.orient = "horizontal", toolbox.x = "right", toolbox.y = "top",
   dataView = TRUE, readOnly = FALSE, mark = TRUE, dataZoom = FALSE,
   magicType = FALSE, tooltip = TRUE, tooltip.trigger = "item",
@@ -45,6 +45,8 @@ generated: Echart + eTitle(title = "your title.")}
 x accept c("left", "right", "center") and y accept c("top", "bottom", "center") as legal input. 
 you can modify title widget after chart has been generated: 
 \code{Echart + eTitle(title="main title", x = "left", y=10)}}
+
+\item{radius}{the radius of diplay widgets, default is c(20, 110).}
 
 \item{legend}{logical whether the legend widget show or not, default is TRUE.
 you can modify legend widget after chart has been generated, the legend position and 
@@ -119,4 +121,3 @@ ePie(x) + eTitle("test")
 testData <- head(mapTestData_chs, 5)
 ePie(testData, ~stdName, ~val1)
 }
-
