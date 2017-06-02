@@ -13,11 +13,11 @@ recharts 提供了百度开源可视化js框架ECharts的R语言接口，现提�
 和桑基图（[eSankey](http://echarts.baidu.com/demo.html#sankey-energy)）图逐一实现。
 
 # recharts的安装(Installation)
-recharts包的源代码在[Github/taiyun/recharts](https://github.com/taiyun/recharts)上提供下载与安装，安装需要使用以下代码：
+recharts包的源代码在[Github/Sai628/recharts](https://github.com/Sai628/recharts)上提供下载与安装，安装需要使用以下代码：
 
 ```s
 require(devtools)
-devtools::install_github('taiyun/recharts')
+devtools::install_github('Sai628/recharts')
 ```
 
 
