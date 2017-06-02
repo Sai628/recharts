@@ -23,6 +23,7 @@
 #'   x accept c("left", "right", "center") and y accept c("top", "bottom", "center") as legal input. 
 #'   you can modify title widget after chart has been generated: 
 #'   \code{Echart + eTitle(title="main title", x = "left", y=10)}
+#' @param radius the radius of diplay widgets, default is c(20, 110).
 #' @param legend logical whether the legend widget show or not, default is TRUE.
 #'   you can modify legend widget after chart has been generated, the legend position and 
 #'   legend orientation are available at present.
