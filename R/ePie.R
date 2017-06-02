@@ -79,7 +79,7 @@
 #' testData <- head(mapTestData_chs, 5)
 #' ePie(testData, ~stdName, ~val1)
 ePie = function(dat, namevar=NULL, datavar=NULL, size = NULL,  type=c("pie", "rose"), roseType=c("radias", "area"),
-	theme = "default", title = NULL, subtitle = NULL, title.x = "center", title.y = "top", 
+	theme = "default", title = NULL, subtitle = NULL, title.x = "center", title.y = "top", radius=c(20, 110),
 	legend = TRUE, legend.x = "left", legend.y= "top", legend.orient="horizontal", 
 	toolbox = TRUE, toolbox.orient = "horizontal", toolbox.x = "right", toolbox.y = "top", 
 	dataView = TRUE, readOnly = FALSE, mark=TRUE, dataZoom=FALSE, magicType=FALSE,
@@ -143,7 +143,7 @@ ePie = function(dat, namevar=NULL, datavar=NULL, size = NULL,  type=c("pie", "ro
 		list(
 			name = paste(type, "chart"),
 			type = "pie",
-			radius = c(20,110),
+			radius = radius,
 			center = c("50%", 200),
 			roseType = ifelse(type=="rose", roseType, ""),
 			itemStyle = list(
